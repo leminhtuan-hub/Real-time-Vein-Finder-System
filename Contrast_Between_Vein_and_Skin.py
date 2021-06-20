@@ -18,8 +18,10 @@ import numpy as np
 # Uskin = np.mean(locs1)
 # print(Uskin)
 
-imagevein = cv2.imread("D:/Capstone Project/anh do an/anh canh tay/Screenshot_30.png")
-imageskin = cv2.imread("D:/Capstone Project/anh do an/anh canh tay/Screenshot_31.png")
+# ảnh sẽ được cắt thành 1 phần nhỏ (ROI) từ ảnh xám để lấy được vùng trung bình của tĩnh mạch
+imagevein = cv2.imread("Your path")
+# ảnh sẽ được cắt thành 1 phần nhỏ (ROI) từ ảnh xám để lấy được vùng trung bình của da
+imageskin = cv2.imread("Your path")
 cv2.imshow('vein', imagevein)
 cv2.waitKey(0)
 cv2.imshow('skin', imageskin)
