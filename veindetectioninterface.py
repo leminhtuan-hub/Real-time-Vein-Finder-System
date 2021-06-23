@@ -39,7 +39,7 @@ class VeinDetectionInterface:
         self.panel = None
         self.image = None
         
-        lab = tk.Label(self.root, text="Vein Detection Interface", fg ="blue", font = "Helvetica 16 bold")
+        lab = tk.Label(self.root, text="Vein Finder Interface", fg ="blue", font = "Helvetica 16 bold")
         lab.pack()
         
         btnSnapshot = tk.Button(self.root, width=50, text="Snapshot", command=self.takeSnapshot)
@@ -68,7 +68,7 @@ class VeinDetectionInterface:
         self.videoLoop()
         
 
-        self.root.wm_title("VeinDetectionInterface")
+        self.root.wm_title("System Interface")
         self.root.wm_protocol("WM_DELETE_WINDOW", self.onClose)
         
     def Brightness(self, value):
